@@ -1,0 +1,1175 @@
+{
+  "population": "Full processed vulnerable-association export; no all-version denominator",
+  "processed_path": "data/processed/associations.parquet",
+  "results_path": "results",
+  "figures_path": "figures",
+  "processed_sha256": "ad55a0b8b0eee648ae01a526fc0dc5caa57b8a45ae284effb90f59cf534c2d91",
+  "methods": {
+    "counts": "Exact DuckDB distinct tuple/group aggregations",
+    "quantiles": "numpy linear interpolation on full entity aggregates",
+    "boxplots": "Q1 median Q3 and 1.5-IQR whiskers, log axes",
+    "correlations": "Spearman rank over full package aggregates, no fitted model",
+    "advisory_weighting": "Ecosystem-advisory IDs with maximum recorded numeric score, aliases unresolved"
+  },
+  "totals": {
+    "associations": 884137,
+    "packages": 17583,
+    "versions": 279284,
+    "advisory_ids": 24586,
+    "ecosystem_advisory_ids": 26640
+  },
+  "ecosystems": [
+    {
+      "package_manager": "pypi",
+      "associations": 448966,
+      "packages": 1148,
+      "versions": 63879,
+      "advisories": 6815
+    },
+    {
+      "package_manager": "npm",
+      "associations": 375126,
+      "packages": 15052,
+      "versions": 195515,
+      "advisories": 16847
+    },
+    {
+      "package_manager": "rubygems",
+      "associations": 57310,
+      "packages": 1233,
+      "versions": 19183,
+      "advisories": 1961
+    },
+    {
+      "package_manager": "cargo",
+      "associations": 2735,
+      "packages": 150,
+      "versions": 707,
+      "advisories": 1017
+    }
+  ],
+  "quality": [
+    {
+      "package_manager": "pypi",
+      "n": 448966,
+      "severity_unknown": 0,
+      "severity_zero": 136179,
+      "description_blank": 0
+    },
+    {
+      "package_manager": "npm",
+      "n": 375126,
+      "severity_unknown": 0,
+      "severity_zero": 64352,
+      "description_blank": 0
+    },
+    {
+      "package_manager": "rubygems",
+      "n": 57310,
+      "severity_unknown": 0,
+      "severity_zero": 17672,
+      "description_blank": 0
+    },
+    {
+      "package_manager": "cargo",
+      "n": 2735,
+      "severity_unknown": 0,
+      "severity_zero": 646,
+      "description_blank": 0
+    }
+  ],
+  "severity_bands": [
+    {
+      "package_manager": "pypi",
+      "band": "Medium",
+      "n": 143313
+    },
+    {
+      "package_manager": "pypi",
+      "band": "High",
+      "n": 104660
+    },
+    {
+      "package_manager": "pypi",
+      "band": "Critical",
+      "n": 41799
+    },
+    {
+      "package_manager": "rubygems",
+      "band": "Zero",
+      "n": 17672
+    },
+    {
+      "package_manager": "rubygems",
+      "band": "Low",
+      "n": 1645
+    },
+    {
+      "package_manager": "cargo",
+      "band": "Medium",
+      "n": 758
+    },
+    {
+      "package_manager": "cargo",
+      "band": "High",
+      "n": 928
+    },
+    {
+      "package_manager": "cargo",
+      "band": "Critical",
+      "n": 285
+    },
+    {
+      "package_manager": "npm",
+      "band": "Critical",
+      "n": 51022
+    },
+    {
+      "package_manager": "npm",
+      "band": "Medium",
+      "n": 136686
+    },
+    {
+      "package_manager": "npm",
+      "band": "High",
+      "n": 114943
+    },
+    {
+      "package_manager": "pypi",
+      "band": "Zero",
+      "n": 136179
+    },
+    {
+      "package_manager": "pypi",
+      "band": "Low",
+      "n": 23015
+    },
+    {
+      "package_manager": "rubygems",
+      "band": "High",
+      "n": 16091
+    },
+    {
+      "package_manager": "rubygems",
+      "band": "Medium",
+      "n": 17088
+    },
+    {
+      "package_manager": "rubygems",
+      "band": "Critical",
+      "n": 4814
+    },
+    {
+      "package_manager": "cargo",
+      "band": "Zero",
+      "n": 646
+    },
+    {
+      "package_manager": "cargo",
+      "band": "Low",
+      "n": 118
+    },
+    {
+      "package_manager": "npm",
+      "band": "Zero",
+      "n": 64352
+    },
+    {
+      "package_manager": "npm",
+      "band": "Low",
+      "n": 8123
+    }
+  ],
+  "severity_numeric_summary": [
+    {
+      "package_manager": "cargo",
+      "known_n": 2735,
+      "min": 0.0,
+      "q1": 2.5,
+      "median": 6.5,
+      "q3": 7.5,
+      "max": 10.0,
+      "mean": 5.351736745886679
+    },
+    {
+      "package_manager": "npm",
+      "known_n": 375126,
+      "min": 0.0,
+      "q1": 5.0,
+      "median": 6.5,
+      "q3": 8.1,
+      "max": 10.0,
+      "mean": 5.890855072699511
+    },
+    {
+      "package_manager": "pypi",
+      "known_n": 448966,
+      "min": 0.0,
+      "q1": 0.0,
+      "median": 5.5,
+      "q3": 7.5,
+      "max": 10.0,
+      "mean": 4.663287865899815
+    },
+    {
+      "package_manager": "rubygems",
+      "known_n": 57310,
+      "min": 0.0,
+      "q1": 0.0,
+      "median": 6.1,
+      "q3": 7.5,
+      "max": 10.0,
+      "mean": 4.7853917291923596
+    }
+  ],
+  "package_burden": [
+    {
+      "package_manager": "pypi",
+      "n": 1148,
+      "min": 1.0,
+      "q1": 7.0,
+      "median": 24.0,
+      "q3": 57.0,
+      "max": 1420.0,
+      "mean": 55.643728222996515,
+      "p95": 193.0,
+      "iqr": 50.0,
+      "skewness": 6.110623184328455,
+      "outlier_count": 114
+    },
+    {
+      "package_manager": "npm",
+      "n": 15052,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 4909.0,
+      "mean": 12.989303747010364,
+      "p95": 43.0,
+      "iqr": 0.0,
+      "skewness": 23.03381584223965,
+      "outlier_count": 2395
+    },
+    {
+      "package_manager": "rubygems",
+      "n": 1233,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 5.0,
+      "max": 482.0,
+      "mean": 15.557988645579886,
+      "p95": 87.39999999999986,
+      "iqr": 4.0,
+      "skewness": 5.508753497361188,
+      "outlier_count": 253
+    },
+    {
+      "package_manager": "cargo",
+      "n": 150,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 5.0,
+      "max": 57.0,
+      "mean": 4.713333333333333,
+      "p95": 20.0,
+      "iqr": 4.0,
+      "skewness": 3.6572532131110442,
+      "outlier_count": 17
+    }
+  ],
+  "advisory_reach": [
+    {
+      "package_manager": "pypi",
+      "n": 6815,
+      "min": 1.0,
+      "q1": 11.0,
+      "median": 36.0,
+      "q3": 81.0,
+      "max": 1420.0,
+      "mean": 65.87909024211298,
+      "p95": 213.0,
+      "iqr": 70.0,
+      "skewness": 4.5035455950408565,
+      "outlier_count": 450
+    },
+    {
+      "package_manager": "npm",
+      "n": 16847,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 4909.0,
+      "mean": 22.266635009200453,
+      "p95": 95.69999999999891,
+      "iqr": 0.0,
+      "skewness": 17.41802372830819,
+      "outlier_count": 3938
+    },
+    {
+      "package_manager": "rubygems",
+      "n": 1961,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 2.0,
+      "q3": 31.0,
+      "max": 444.0,
+      "mean": 29.22488526262111,
+      "p95": 139.0,
+      "iqr": 30.0,
+      "skewness": 3.4668107284084186,
+      "outlier_count": 256
+    },
+    {
+      "package_manager": "cargo",
+      "n": 1017,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 2.0,
+      "max": 57.0,
+      "mean": 2.689282202556539,
+      "p95": 10.0,
+      "iqr": 1.0,
+      "skewness": 4.588305950145223,
+      "outlier_count": 172
+    }
+  ],
+  "concentration": [
+    {
+      "package_manager": "pypi",
+      "package_count": 1148,
+      "affected_version_sum": 63879,
+      "top_1pct_packages_count": 12,
+      "top_1pct_version_share_pct": 15.872195870317318,
+      "top_10pct_version_share_pct": 51.82141235773885
+    },
+    {
+      "package_manager": "npm",
+      "package_count": 15052,
+      "affected_version_sum": 195515,
+      "top_1pct_packages_count": 151,
+      "top_1pct_version_share_pct": 52.4118354090479,
+      "top_10pct_version_share_pct": 91.35769634043423
+    },
+    {
+      "package_manager": "rubygems",
+      "package_count": 1233,
+      "affected_version_sum": 19183,
+      "top_1pct_packages_count": 13,
+      "top_1pct_version_share_pct": 21.263618829171662,
+      "top_10pct_version_share_pct": 74.26888390762655
+    },
+    {
+      "package_manager": "cargo",
+      "package_count": 150,
+      "affected_version_sum": 707,
+      "top_1pct_packages_count": 2,
+      "top_1pct_version_share_pct": 12.022630834512023,
+      "top_10pct_version_share_pct": 47.38330975954738
+    }
+  ],
+  "count_relationship": [
+    {
+      "package_manager": "pypi",
+      "n_packages": 1148,
+      "spearman_rho": 0.3862031903751967,
+      "method": "Exact rank correlation on all processed ecosystem-qualified packages; no fitted trend"
+    },
+    {
+      "package_manager": "npm",
+      "n_packages": 15052,
+      "spearman_rho": 0.4673264984964335,
+      "method": "Exact rank correlation on all processed ecosystem-qualified packages; no fitted trend"
+    },
+    {
+      "package_manager": "rubygems",
+      "n_packages": 1233,
+      "spearman_rho": 0.5851009730587957,
+      "method": "Exact rank correlation on all processed ecosystem-qualified packages; no fitted trend"
+    },
+    {
+      "package_manager": "cargo",
+      "n_packages": 150,
+      "spearman_rho": 0.24089883180030489,
+      "method": "Exact rank correlation on all processed ecosystem-qualified packages; no fitted trend"
+    }
+  ],
+  "weighting_comparison": [
+    {
+      "package_manager": "pypi",
+      "known_score_associations": 448966,
+      "high_critical_associations": 146459,
+      "high_critical_known_association_pct": 32.62140117514467,
+      "known_score_ecosystem_advisory_ids": 6815,
+      "high_critical_advisory_maxima": 2061,
+      "high_critical_known_advisory_max_pct": 30.24211298606016
+    },
+    {
+      "package_manager": "npm",
+      "known_score_associations": 375126,
+      "high_critical_associations": 165965,
+      "high_critical_known_association_pct": 44.24246786413099,
+      "known_score_ecosystem_advisory_ids": 16847,
+      "high_critical_advisory_maxima": 2300,
+      "high_critical_known_advisory_max_pct": 13.652282305454976
+    },
+    {
+      "package_manager": "rubygems",
+      "known_score_associations": 57310,
+      "high_critical_associations": 20905,
+      "high_critical_known_association_pct": 36.477054615250395,
+      "known_score_ecosystem_advisory_ids": 1961,
+      "high_critical_advisory_maxima": 462,
+      "high_critical_known_advisory_max_pct": 23.55940846506884
+    },
+    {
+      "package_manager": "cargo",
+      "known_score_associations": 2735,
+      "high_critical_associations": 1213,
+      "high_critical_known_association_pct": 44.35100548446069,
+      "known_score_ecosystem_advisory_ids": 1017,
+      "high_critical_advisory_maxima": 324,
+      "high_critical_known_advisory_max_pct": 31.858407079646017
+    }
+  ],
+  "advisory_conflicts": [
+    {
+      "package_manager": "npm",
+      "advisory_ids": 16847,
+      "multi_score_ids": 0,
+      "maximum_scores_per_id": 1
+    },
+    {
+      "package_manager": "pypi",
+      "advisory_ids": 6815,
+      "multi_score_ids": 0,
+      "maximum_scores_per_id": 1
+    },
+    {
+      "package_manager": "rubygems",
+      "advisory_ids": 1961,
+      "multi_score_ids": 0,
+      "maximum_scores_per_id": 1
+    },
+    {
+      "package_manager": "cargo",
+      "advisory_ids": 1017,
+      "multi_score_ids": 0,
+      "maximum_scores_per_id": 1
+    }
+  ],
+  "cross_ecosystem_advisory_ids": 1638,
+  "conflict_examples": [],
+  "top_packages": [
+    {
+      "package_manager": "npm",
+      "package_name": "rsshub",
+      "versions": 4909,
+      "advisories": 6,
+      "associations": 20217,
+      "max_score": 8.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "firebase",
+      "versions": 3558,
+      "advisories": 1,
+      "associations": 3558,
+      "max_score": 5.3
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "gatsby",
+      "versions": 2864,
+      "advisories": 1,
+      "associations": 2864,
+      "max_score": 4.3
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@budibase/server",
+      "versions": 2640,
+      "advisories": 1,
+      "associations": 2640,
+      "max_score": 9.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "next",
+      "versions": 2630,
+      "advisories": 20,
+      "associations": 12096,
+      "max_score": 7.5
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@prisma/sdk",
+      "versions": 2320,
+      "advisories": 1,
+      "associations": 2320,
+      "max_score": 7.7
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@theia/plugin-ext",
+      "versions": 2194,
+      "advisories": 1,
+      "associations": 2194,
+      "max_score": 6.1
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "vxe-table",
+      "versions": 1926,
+      "advisories": 2,
+      "associations": 3019,
+      "max_score": 7.5
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@theia/preview",
+      "versions": 1871,
+      "advisories": 1,
+      "associations": 1871,
+      "max_score": 9.6
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@theia/mini-browser",
+      "versions": 1843,
+      "advisories": 2,
+      "associations": 3318,
+      "max_score": 8.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@firebase/util",
+      "versions": 1820,
+      "advisories": 1,
+      "associations": 1820,
+      "max_score": 5.3
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "meshcentral",
+      "versions": 1814,
+      "advisories": 4,
+      "associations": 7242,
+      "max_score": 9.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@theia/messages",
+      "versions": 1786,
+      "advisories": 1,
+      "associations": 1786,
+      "max_score": 6.1
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "snyk",
+      "versions": 1714,
+      "advisories": 3,
+      "associations": 5074,
+      "max_score": 8.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "pdfjs-dist",
+      "versions": 1537,
+      "advisories": 2,
+      "associations": 3040,
+      "max_score": 8.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@aws-amplify/cli",
+      "versions": 1515,
+      "advisories": 1,
+      "associations": 1515,
+      "max_score": 9.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@theia/console",
+      "versions": 1473,
+      "advisories": 1,
+      "associations": 1473,
+      "max_score": 6.1
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@lodestar/reqresp",
+      "versions": 1466,
+      "advisories": 2,
+      "associations": 2932,
+      "max_score": 0.0
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "graphql-code-generator",
+      "versions": 1424,
+      "advisories": 1,
+      "associations": 1424,
+      "max_score": 0.0
+    },
+    {
+      "package_manager": "pypi",
+      "package_name": "cg",
+      "versions": 1420,
+      "advisories": 1,
+      "associations": 1420,
+      "max_score": 6.1
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@budibase/bbui",
+      "versions": 1299,
+      "advisories": 1,
+      "associations": 1299,
+      "max_score": 5.7
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@budibase/worker",
+      "versions": 1281,
+      "advisories": 1,
+      "associations": 1281,
+      "max_score": 5.7
+    },
+    {
+      "package_manager": "pypi",
+      "package_name": "sickrage",
+      "versions": 1238,
+      "advisories": 5,
+      "associations": 4827,
+      "max_score": 9.8
+    },
+    {
+      "package_manager": "npm",
+      "package_name": "@sap-cloud-sdk/core",
+      "versions": 1231,
+      "advisories": 2,
+      "associations": 1304,
+      "max_score": 5.9
+    },
+    {
+      "package_manager": "pypi",
+      "package_name": "homeassistant",
+      "versions": 1187,
+      "advisories": 6,
+      "associations": 4997,
+      "max_score": 7.5
+    }
+  ],
+  "top_advisories": [
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-jvxx-v45p-v5vf",
+      "versions": 4909,
+      "packages": 1,
+      "associations": 4909,
+      "max_score": 5.3,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-pgjj-866w-fc5c",
+      "versions": 4909,
+      "packages": 1,
+      "associations": 4909,
+      "max_score": 8.6,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-32gr-4cq6-5w5q",
+      "versions": 3846,
+      "packages": 1,
+      "associations": 3846,
+      "max_score": 6.1,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-3wf4-68gx-mph8",
+      "versions": 3558,
+      "packages": 1,
+      "associations": 3558,
+      "max_score": 5.3,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-64wp-jh9p-5cg2",
+      "versions": 3170,
+      "packages": 1,
+      "associations": 3170,
+      "max_score": 8.8,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-3p3p-cgj7-vgw3",
+      "versions": 3115,
+      "packages": 1,
+      "associations": 3115,
+      "max_score": 6.5,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-c6f8-8r25-c4gc",
+      "versions": 2864,
+      "packages": 1,
+      "associations": 2864,
+      "max_score": 4.3,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-4g2x-vq5p-5vj6",
+      "versions": 2640,
+      "packages": 1,
+      "associations": 2640,
+      "max_score": 9.8,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-5r98-f33j-g8h7",
+      "versions": 2606,
+      "packages": 8,
+      "associations": 2606,
+      "max_score": 7.5,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-x92g-49gh-63qm",
+      "versions": 2592,
+      "packages": 3,
+      "associations": 2592,
+      "max_score": 5.7,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-4x6g-3cmx-w76r",
+      "versions": 2402,
+      "packages": 8,
+      "associations": 2402,
+      "max_score": 6.3,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-pxcc-hj8w-fmm7",
+      "versions": 2320,
+      "packages": 1,
+      "associations": 2320,
+      "max_score": 7.7,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-w6v7-w58j-pg5r",
+      "versions": 2194,
+      "packages": 1,
+      "associations": 2194,
+      "max_score": 6.1,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-c59h-r6p8-q9wc",
+      "versions": 2032,
+      "packages": 1,
+      "associations": 2032,
+      "max_score": 0.0,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-w42g-7vfc-xf37",
+      "versions": 1947,
+      "packages": 12,
+      "associations": 1947,
+      "max_score": 0.0,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-89fp-f5mx-748x",
+      "versions": 1926,
+      "packages": 1,
+      "associations": 1926,
+      "max_score": 7.5,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-gcm9-cc3r-c6vj",
+      "versions": 1871,
+      "packages": 1,
+      "associations": 1871,
+      "max_score": 9.6,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-v9w2-v7j9-rjpr",
+      "versions": 1843,
+      "packages": 1,
+      "associations": 1843,
+      "max_score": 8.8,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-fpm5-vv97-jfwg",
+      "versions": 1820,
+      "packages": 1,
+      "associations": 1820,
+      "max_score": 5.3,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-cp68-qrhr-g9h8",
+      "versions": 1814,
+      "packages": 1,
+      "associations": 1814,
+      "max_score": 8.3,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-wpxw-5xfm-x22v",
+      "versions": 1810,
+      "packages": 1,
+      "associations": 1810,
+      "max_score": 7.5,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-8xw6-9h78-c89j",
+      "versions": 1809,
+      "packages": 1,
+      "associations": 1809,
+      "max_score": 9.8,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-v269-rrr6-cx6r",
+      "versions": 1809,
+      "packages": 1,
+      "associations": 1809,
+      "max_score": 7.5,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-j2wh-wrv3-4x4g",
+      "versions": 1799,
+      "packages": 2,
+      "associations": 1799,
+      "max_score": 5.8,
+      "numeric_scores": 1
+    },
+    {
+      "package_manager": "npm",
+      "vuln_id": "GHSA-c94v-8fff-73ph",
+      "versions": 1786,
+      "packages": 1,
+      "associations": 1786,
+      "max_score": 6.1,
+      "numeric_scores": 1
+    }
+  ],
+  "top_record_weighted_score_modes": [
+    {
+      "package_manager": "pypi",
+      "severity_score": 0.0,
+      "n": 136179
+    },
+    {
+      "package_manager": "npm",
+      "severity_score": 0.0,
+      "n": 64352
+    },
+    {
+      "package_manager": "npm",
+      "severity_score": 7.5,
+      "n": 44519
+    },
+    {
+      "package_manager": "pypi",
+      "severity_score": 7.5,
+      "n": 41152
+    },
+    {
+      "package_manager": "npm",
+      "severity_score": 9.8,
+      "n": 34887
+    },
+    {
+      "package_manager": "npm",
+      "severity_score": 6.1,
+      "n": 32207
+    },
+    {
+      "package_manager": "pypi",
+      "severity_score": 9.8,
+      "n": 28138
+    },
+    {
+      "package_manager": "pypi",
+      "severity_score": 6.5,
+      "n": 26037
+    },
+    {
+      "package_manager": "npm",
+      "severity_score": 5.3,
+      "n": 24523
+    },
+    {
+      "package_manager": "npm",
+      "severity_score": 8.8,
+      "n": 18718
+    },
+    {
+      "package_manager": "pypi",
+      "severity_score": 6.1,
+      "n": 18055
+    },
+    {
+      "package_manager": "pypi",
+      "severity_score": 5.3,
+      "n": 17774
+    }
+  ],
+  "severity_histogram": {
+    "population_associations": 884137,
+    "recorded_zero_associations": 218849,
+    "unknown_associations": 0,
+    "positive_associations": 665288,
+    "bin_width": 0.5,
+    "bins": [
+      {
+        "bin_left": 0.0,
+        "bin_right": 0.5,
+        "positive_associations": 0,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 0.5,
+        "bin_right": 1.0,
+        "positive_associations": 0,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 1.0,
+        "bin_right": 1.5,
+        "positive_associations": 0,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 1.5,
+        "bin_right": 2.0,
+        "positive_associations": 0,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 2.0,
+        "bin_right": 2.5,
+        "positive_associations": 1866,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 2.5,
+        "bin_right": 3.0,
+        "positive_associations": 13105,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 3.0,
+        "bin_right": 3.5,
+        "positive_associations": 5558,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 3.5,
+        "bin_right": 4.0,
+        "positive_associations": 12372,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 4.0,
+        "bin_right": 4.5,
+        "positive_associations": 29687,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 4.5,
+        "bin_right": 5.0,
+        "positive_associations": 17939,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 5.0,
+        "bin_right": 5.5,
+        "positive_associations": 72724,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 5.5,
+        "bin_right": 6.0,
+        "positive_associations": 53025,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 6.0,
+        "bin_right": 6.5,
+        "positive_associations": 69459,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 6.5,
+        "bin_right": 7.0,
+        "positive_associations": 55011,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 7.0,
+        "bin_right": 7.5,
+        "positive_associations": 34057,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 7.5,
+        "bin_right": 8.0,
+        "positive_associations": 119155,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 8.0,
+        "bin_right": 8.5,
+        "positive_associations": 31773,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 8.5,
+        "bin_right": 9.0,
+        "positive_associations": 51637,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 9.0,
+        "bin_right": 9.5,
+        "positive_associations": 20186,
+        "last_bin_right_inclusive": false
+      },
+      {
+        "bin_left": 9.5,
+        "bin_right": 10.0,
+        "positive_associations": 77734,
+        "last_bin_right_inclusive": true
+      }
+    ],
+    "top_numeric_modes": [
+      {
+        "severity_score": 0.0,
+        "n": 218849
+      },
+      {
+        "severity_score": 7.5,
+        "n": 94685
+      },
+      {
+        "severity_score": 9.8,
+        "n": 66977
+      },
+      {
+        "severity_score": 6.1,
+        "n": 53745
+      },
+      {
+        "severity_score": 6.5,
+        "n": 45280
+      },
+      {
+        "severity_score": 5.3,
+        "n": 45132
+      },
+      {
+        "severity_score": 8.8,
+        "n": 37334
+      },
+      {
+        "severity_score": 5.9,
+        "n": 22651
+      },
+      {
+        "severity_score": 5.4,
+        "n": 21942
+      },
+      {
+        "severity_score": 5.5,
+        "n": 18221
+      }
+    ]
+  },
+  "research_question_support": [
+    {
+      "question": "Distribution across ecosystems, versions and impact",
+      "status": "Partially answered",
+      "reason": "Exact distributions within observed association export; all-version prevalence and alias-resolved advisory counts require enrichment"
+    },
+    {
+      "question": "Recent versus older vulnerable versions",
+      "status": "Deferred",
+      "reason": "CSV has no release timestamps or reliable ecosystem-specific latest-release ordering"
+    },
+    {
+      "question": "Cross-ecosystem quality and structure",
+      "status": "Answered for CSV",
+      "reason": "Exact field, key, severity and subgroup profiles; database validation remains separate"
+    },
+    {
+      "question": "Direct versus transitive exposure",
+      "status": "Deferred",
+      "reason": "CSV has no dependency edges, constraints or resolved dependency versions"
+    }
+  ],
+  "figure_captions": {
+    "01_ecosystem_composition": "Figure 1. Exact ecosystem counts at association, package, package-version and advisory grains. Each panel has its own denominator. The population is the processed vulnerable-association export, not all published packages or versions.",
+    "02_quality_profiles": "Figure 2. Exact percentages of processed records with missing/invalid severity, a recorded zero score, or a blank description, within each ecosystem. Zero is retained separately because its source meaning is not fully documented. These percentages describe record completeness rather than missingness mechanisms.",
+    "03_severity_bands": "Figure 3. Severity-band percentages of processed associations within each ecosystem. Bands use numeric scores: zero, (0,4), [4,7), [7,9), and [9,10]. Unknown includes absent or invalid values. Scores do not establish exploitability or safety.",
+    "04_weighting_ecdf": "Figure 4. Empirical cumulative distributions of numeric severity for associations and for ecosystem-advisory IDs using each ID's maximum observed score. Each line excludes unknown scores and states a different estimand. Advisory aliases remain unresolved and conflicting scores can affect the maximum.",
+    "05_package_version_burden": "Figure 5. Distribution of distinct observed affected versions per ecosystem-qualified package. Boxes show Q1, median and Q3; whiskers use 1.5 IQR and dots show outside values. The logarithmic axis reveals skew in a vulnerable-only population without release dates.",
+    "06_advisory_reach": "Figure 6. Distinct ecosystem-qualified package versions linked to each ecosystem-advisory ID. Boxes show Q1, median and Q3; whiskers use 1.5 IQR and dots show outside values. Counts measure observed advisory reach rather than independent security events.",
+    "07_exposure_concentration": "Figure 7. Lorenz curves for observed affected-version counts across ecosystem-qualified packages, sorted by burden. Axes express shares of packages and observed affected versions within each ecosystem. A package-version associated with multiple advisories contributes once to that package's burden.",
+    "08_package_count_relationship": "Figure 8. Logarithmic hexbin views of distinct affected-version count versus distinct advisory-ID count per package. Hexagon color shows package frequency. Spearman correlation summarizes rank association only; no regression, causal effect, or temporal trend is fitted.",
+    "09_severity_histogram": "Figure 9. Exact association-weighted numeric severity distribution from processed data. Recorded zeros are counted separately from positive scores, which use 0.5-point bins on [0,10], left-closed and right-open except the final bin. Missing or invalid scores are excluded from numeric bins and reported separately; zeros do not establish safety."
+  },
+  "elapsed_seconds": 17.836899299989454,
+  "authorship_status": "Complete evidence-based interpretations prepared with AI assistance. This computation record does not certify individual student contributions or rehearsal.",
+  "figure_interpretations": {
+    "01_ecosystem_composition": "PyPI contributes 448,966 of 884,137 associations (50.78%), while npm contributes 15,052 of 17,583 observed packages (85.61%). The reversal shows why repeated package-version/advisory links and distinct package counts answer different parts of the Phase 1 distribution question. These are counts within the vulnerable-association export, so neither share estimates prevalence among all ecosystem packages.",
+    "02_quality_profiles": "No processed association has missing/invalid numeric severity or a blank description, but recorded-zero rates differ: RubyGems 30.84%, PyPI 30.33%, Cargo 23.62% and npm 17.15%. Thus syntactically complete fields still require semantic review before cross-ecosystem comparison. Zero is retained as a recorded value; its exporter meaning is undocumented and these observations cannot establish a random missingness mechanism or safety.",
+    "03_severity_bands": "Scores of at least 7 account for 165,965/375,126 npm associations (44.24%) and 146,459/448,966 PyPI associations (32.62%). Because this export has no unknown numeric scores, the known-score and full-association denominators coincide in these percentages. The profiles answer the observed impact-distribution question, but repeated affected versions and source scoring conventions prevent interpreting the difference as ecosystem-wide risk.",
+    "04_weighting_ecdf": "The npm high/critical share changes from 44.24% among 375,126 scored associations to 13.65% among 16,847 ecosystem-advisory maxima; PyPI changes only from 32.62% to 30.24%. Repeated links to many affected versions can substantially change an impact summary, so choosing the counting unit matters more than simply choosing a chart. Each observed ecosystem-advisory pair has one numeric score here, but unresolved aliases mean advisory IDs still cannot be assumed to represent independent vulnerabilities.",
+    "05_package_version_burden": "PyPI's 1,148 observed packages have median 24 affected versions and IQR 50, compared with npm's median 1 and IQR 0 across 15,052 packages. npm nevertheless reaches 4909 versions for one package, making the long tail visible on a log axis; its zero IQR means counts above one meet the mechanical 1.5-IQR rule, not that they are invalid. Resistant summaries preserve this structure without deleting legitimate extremes, and no complete-release denominator or chronology is available.",
+    "06_advisory_reach": "Median affected-package-version reach is 36 for 6,815 PyPI ecosystem-advisory IDs, 2 for RubyGems and 1 for npm and Cargo. npm's maximum of 4909 versus PyPI's 1420 shows that a small median can coexist with very broad observed advisories. This partly answers Phase 1's version-distribution question and supports inspection of high-burden IDs, but counts represent observed associations rather than installations, exploitation or alias-resolved security events.",
+    "07_exposure_concentration": "The top 151 of 15,052 npm packages account for 52.41% of its 195,515 observed affected versions; the corresponding PyPI group of 12 accounts for 15.87%. This concentration suggests that a descriptive review focused on high-burden observed packages can cover many affected-version records. Each top group is ceil(1% of observed packages), and the curve measures neither installed dependency reach nor the probability a package is vulnerable.",
+    "08_package_count_relationship": "Spearman correlations between distinct affected-version count and advisory-ID count are pypi 0.386 (n=1,148), npm 0.467 (n=15,052), rubygems 0.585 (n=1,233), cargo 0.241 (n=150). A defined positive coefficient indicates rank association; a constant count makes the coefficient undefined. Hexbin aggregation avoids overplotting and exposes ties and sparse tails; without a fitted trend there are no model residuals to diagnose, and no causal or temporal conclusion follows.",
+    "09_severity_histogram": "Recorded zero forms a separate mass of 218,849/884,137 associations (24.75%); missing/invalid scores number 0 and never enter the numeric bins. Among positive recorded scores, exact modes include 7.5 (94,685 associations) and 9.8 (66,977), producing pronounced peaks rather than a smooth bell-shaped distribution. Half-point bins reveal broad shape while the exact frequency table preserves discrete spikes; these association-weighted peaks reflect repeated versions and score conventions, not independent vulnerability counts."
+  }
+}
