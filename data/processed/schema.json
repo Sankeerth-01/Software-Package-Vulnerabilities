@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "grain": "Distinct normalized full payload; ecosystem/package/version/advisory repeats only when payload_conflict is flagged",
+  "source_sha256": "fd3aa9b14c366b9a3759a0e3c99741e0f665f10cc01abee25920a9ae5ed24445",
+  "columns": [
+    {
+      "column_name": "package_name",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "package_manager",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "version_name",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "vuln_id",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "vuln_impact_raw",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "vuln_description",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "score_status",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "severity_score",
+      "data_type": "DOUBLE"
+    },
+    {
+      "column_name": "severity_band",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "association_key_hash",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "package_key_hash",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "version_key_hash",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "first_source_row",
+      "data_type": "BIGINT"
+    },
+    {
+      "column_name": "representative_raw_record_hash",
+      "data_type": "VARCHAR"
+    },
+    {
+      "column_name": "source_multiplicity",
+      "data_type": "BIGINT"
+    },
+    {
+      "column_name": "payload_conflict",
+      "data_type": "BOOLEAN"
+    }
+  ],
+  "severity": "Zero retained separately; 0<score<4 Low;4<=score<7 Medium;7<=score<9 High;9<=score<=10 Critical. Descriptive bins do not validate CVSS version/source.",
+  "keys": "SHA256 of JSON structs; original components retained for transparent joins; aliases unresolved"
+}
