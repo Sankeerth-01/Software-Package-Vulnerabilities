@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-22T05:39:02.912247+00:00",
+  "encoding": "ordered_raw_byte_parts",
+  "source_csv_sha256": "fd3aa9b14c366b9a3759a0e3c99741e0f665f10cc01abee25920a9ae5ed24445",
+  "processed": {
+    "path": "data/processed/associations.parquet",
+    "bytes": 105948415,
+    "sha256": "ad55a0b8b0eee648ae01a526fc0dc5caa57b8a45ae284effb90f59cf534c2d91",
+    "rows": 884137,
+    "parts": [
+      {
+        "path": "data/distribution/associations-ad55a0b8b0eee648.part-001",
+        "bytes": 40000000,
+        "sha256": "350959fc01f30904de8c20dc797c36b863efe2bd23ebe4ab28c72eba9b0caa1c"
+      },
+      {
+        "path": "data/distribution/associations-ad55a0b8b0eee648.part-002",
+        "bytes": 40000000,
+        "sha256": "e87d4845e098d104ee86a3788062e38a176e73f4f51db7dcd5ed88aadca212fb"
+      },
+      {
+        "path": "data/distribution/associations-ad55a0b8b0eee648.part-003",
+        "bytes": 25948415,
+        "sha256": "3dbe4880932a6f3c68d690b8894893987ceb1bc492bb2936171f253f4e586bae"
+      }
+    ]
+  },
+  "sample": {
+    "path": "data/samples/exploration_sample.parquet",
+    "bytes": 31121626,
+    "sha256": "fd1d09dbbcf450c4a714915fe57d919c81e88ab03440b9099206e102145d3dd5",
+    "rows": 250000,
+    "seed": 5872026,
+    "quotas": {
+      "cargo": 2735,
+      "npm": 94978,
+      "pypi": 94977,
+      "rubygems": 57310
+    },
+    "selection_fingerprint": "d599bb51310b9da9d0d046380394c01189580c7d4f294d47f397b5a52501a9e3",
+    "weighting": "Balanced strata; use inclusion_probability and sampling_weight; not used for primary results."
+  },
+  "schema": {
+    "path": "data/processed/schema.json",
+    "bytes": 1928,
+    "sha256": "11d9715c21baf04529b7df3668014eee094ded731424865fe7738972fddd2289"
+  },
+  "delivery": "All parts, schema and sample are ordinary repository files; no external host required."
+}
