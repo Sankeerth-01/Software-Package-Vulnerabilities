@@ -1,0 +1,11 @@
+# Paths resolve relative to repository root.
+input_csv: data/raw/data.csv
+output_dir: data/processed
+results_dir: results
+sample_dir: data/samples
+database: data/processed/phase2.duckdb
+memory_limit: 768MB
+threads: 2
+sample_size: 250000
+seed: 5872026
+run_analytics: true
