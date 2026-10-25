@@ -72,4 +72,4 @@ The export lacks validated release timestamps, a complete safe-release denominat
 
 `src/` builds data; `notebooks/` explores it; `figures/` and `results/` hold evidence; `data/` contains raw, processed, sample and portable parts; `config/` controls paths; `docs/` contains requirements, decisions and supporting materials; `presentation/` contains status updates; and `tools/` support verification; `verification/` contains final executed evidence, change log, inventory and checksums.
 
-No Git operation or `.gitignore` modification is needed to use this folder. No Git metadata, environment, working database or scratch rendering files is delivered. For later authorized manual integration into the existing repository, preserve its real history and copy the relevant contents at its root. Keep the unchanged ignore rules: do not upload the large raw CSV, assembled full Parquet or working database. Retain `data/distribution/` parts and the actual sample so a repository clone can restore the data. This preparation performed no Git or GitHub changes. [START_HERE.md](START_HERE.md) indexes the complete delivery.
+
